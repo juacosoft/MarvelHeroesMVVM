@@ -42,7 +42,7 @@ hash
 
 ## License
 
-Este proyecto fue realizado para prueba practica de programacion en patron de diseño MVVM, RxJava, RXAndroid,Inyeccion de dependencia con Dagger2
+Apache 2.0
 
 ## Acknowledgments
 
