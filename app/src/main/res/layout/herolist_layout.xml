@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/tvTitleHeroes"
+    android:layout_marginTop="40dp"
+    android:id="@+id/spLayout"
+    app:srl_direction="bottom"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitleHeroes">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHeroslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/heroListFragment">
+
+    <fragment
+        android:id="@+id/heroListFragment"
+        android:name="com.jmdev.marvelheroes.ui.view.fragments.HeroListFragment"
+        android:label="HeroListFragment" >
+        <action
+            android:id="@+id/action_heroListFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_heroListFragment_to_hilt_ComicsListFragment"
+            app:destination="@id/comicsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.jmdev.marvelheroes.ui.view.fragments.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_heroListFragment"
+            app:destination="@id/heroListFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/comicsListFragment"
+        android:name="com.jmdev.marvelheroes.ui.view.fragments.ComicsListFragment"
+        android:label="ComicsListFragment" >
+        <action
+            android:id="@+id/action_hilt_ComicsListFragment_to_heroListFragment"
+            app:destination="@id/heroListFragment" />
+    </fragment>
+</navigation>
